@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akhila | Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview">Campus<span>.</span></a>
+      <p class="nav-label">WORKSPACE</p>
+
+      <nav>
+        <a class="nav-link active" href="#overview">⌂ Overview</a>
+        <a class="nav-link" href="#education">▤ Education</a>
+        <a class="nav-link" href="#skills">✧ Skills</a>
+        <a class="nav-link" href="#projects">▧ Projects</a>
+        <a class="nav-link" href="#certifications">♧ Certifications</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="mini-profile">
+          <div class="avatar">AK</div>
+          <div>
+            <strong>Guthi Sai Akhila</strong>
+            <small>Student profile</small>
+          </div>
+          <button id="editShortcut" aria-label="Edit profile">···</button>
+        </div>
+
+        <div class="side-note">
+          <strong>Keep it up!</strong>
+          <p>Small steps today, big achievements tomorrow.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main" id="overview">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton">☰</button>
+        <div class="breadcrumb">Workspace / Overview</div>
+
+        <div class="top-actions">
+          <label class="search">
+            ⌕
+            <input id="searchInput" type="search"
+                   placeholder="Search dashboard">
+          </label>
+          <div class="small-avatar">AK</div>
+        </div>
+      </header>
+
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">YOUR STUDENT SPACE</p>
+          <h1>Welcome, <span id="welcomeName">Akhila</span> ✦</h1>
+          <p class="muted">
+            Your learning journey, skills, and achievements in one place.
+          </p>
+        </div>
+        <button class="primary-button" id="editButton">＋ Edit profile</button>
+      </section>
+
+      <section class="stats-grid searchable">
+        <article class="stat-card">
+          <span class="stat-icon lilac">▤</span>
+          <p class="stat-label">Degree</p>
+          <h2>B.Tech CSE</h2>
+          <p class="stat-foot">Artificial Intelligence &amp; ML</p>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon mint">✧</span>
+          <p class="stat-label">CGPA</p>
+          <h2 id="cgpaStat">Not provided</h2>
+          <p class="stat-foot">Update in Edit Profile</p>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon peach">⌘</span>
+          <p class="stat-label">Programming languages</p>
+          <h2>Java · Python · C</h2>
+          <p class="stat-foot">Plus MySQL and web technologies</p>
+        </article>
+      </section>
+
+      <div class="content-grid">
+        <div class="left-column">
+          <section class="panel searchable" id="education">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">ACADEMIC JOURNEY</p>
+                <h2>Education</h2>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <h3 id="collegeName">Mohan Babu University</h3>
+                <p class="muted">B.Tech Computer Science (AI &amp; ML)</p>
+                <div class="inline-meta">
+                  <span class="pill">Undergraduate</span>
+                  <span>2023 – 2027</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot secondary"></div>
+              <div>
+                <h3>Sri Chaithanya – Tirupati</h3>
+                <p class="muted">Intermediate</p>
+                <span class="pill soft">Education</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel searchable" id="projects">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">WHAT I'M BUILDING</p>
+                <h2>Featured Projects</h2>
+              </div>
+            </div>
+
+            <article class="project-card">
+              <div class="project-symbol blue">⌘</div>
+              <div class="project-body">
+                <div class="project-title-row">
+                  <h3>Fake News Detection</h3>
+                  <span class="pill">NLP / ML</span>
+                </div>
+                <p class="muted">
+                  A machine-learning project concept for classifying news
+                  text using preprocessing and classification techniques.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>Machine Learning</span>
+                  <span>NLP</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-symbol green">⌂</div>
+              <div class="project-body">
+                <div class="project-title-row">
+                  <h3>Smart Home Automation</h3>
+                  <span class="pill">IoT / AI</span>
+                </div>
+                <p class="muted">
+                  A smart-home project concept involving connected sensors
+                  and automated control.
+                </p>
+                <div class="tag-row">
+                  <span>IoT</span>
+                  <span>Sensors</span>
+                  <span>AI</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-symbol purple">▤</div>
+              <div class="project-body">
+                <div class="project-title-row">
+                  <h3>Student Project Management Portal</h3>
+                  <span class="pill">Web</span>
+                </div>
+                <p class="muted">
+                  A portal concept to help students, guides, and staff
+                  organize project information and track progress.
+                </p>
+                <div class="tag-row">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section class="panel profile-panel searchable" id="profile">
+            <div class="profile-cover"></div>
+            <div class="profile-main">
+              <div class="profile-avatar" id="profileInitials">AK</div>
+              <span class="status-dot"></span>
+              <h2 id="profileName">Guthi Sai Akhila</h2>
+              <p class="muted">B.Tech CSE · AI &amp; ML</p>
+
+              <div class="profile-divider"></div>
+
+              <div class="profile-detail">
+                <span>✉</span>
+                <span id="profileEmail">akhilagutthi@gmail.com</span>
+              </div>
+
+              <div class="profile-detail">
+                <span>⌖</span>
+                <span>Mohan Babu University</span>
+              </div>
+
+              <div class="profile-detail">
+                <span>⌘</span>
+                <span>Java · Python · C · MySQL</span>
+              </div>
+
+              <div class="profile-detail">
+                <span>in</span>
+                <a href="https://www.linkedin.com/in/akhila-gutthi-450732345/"
+                   target="_blank" rel="noopener noreferrer">
+                  LinkedIn profile ↗
+                </a>
+              </div>
+
+              <button class="outline-button full" id="profileEditButton">
+                Edit student profile
+              </button>
+            </div>
+          </section>
+
+          <section class="panel searchable" id="skills">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">YOUR TOOLKIT</p>
+                <h2>Technical Skills</h2>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-row">
+                <div><span>Java</span><strong>Programming</strong></div>
+                <div class="skill-track"><span style="width:78%"></span></div>
+              </div>
+              <div class="skill-row">
+                <div><span>Python</span><strong>Programming</strong></div>
+                <div class="skill-track"><span style="width:76%"></span></div>
+              </div>
+              <div class="skill-row">
+                <div><span>C</span><strong>Programming</strong></div>
+                <div class="skill-track"><span style="width:65%"></span></div>
+              </div>
+              <div class="skill-row">
+                <div><span>MySQL</span><strong>Database</strong></div>
+                <div class="skill-track"><span style="width:62%"></span></div>
+              </div>
+              <div class="skill-row">
+                <div><span>HTML / CSS / JavaScript</span><strong>Web</strong></div>
+                <div class="skill-track"><span style="width:65%"></span></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel searchable" id="certifications">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">CONTINUOUS LEARNING</p>
+                <h2>Certifications</h2>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-icon gold">✦</span>
+              <div>
+                <h3>Google AI-ML Virtual Internship</h3>
+                <p class="muted">EduSkills</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-icon lilac-bg">◈</span>
+              <div>
+                <h3>Coursera Certificates</h3>
+                <p class="muted">Coursera</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-icon mint-bg">↗</span>
+              <div>
+                <h3>Java Development</h3>
+                <p class="muted">Certificate listed on resume</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel searchable" id="internships">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">PRACTICAL EXPERIENCE</p>
+                <h2>Internships</h2>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-icon gold">✦</span>
+              <div>
+                <h3>Oasis Infobyte</h3>
+                <p class="muted">Internship listed on resume</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-icon mint-bg">◈</span>
+              <div>
+                <h3>EduSkills</h3>
+                <p class="muted">Internship listed on resume</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        © <span id="year"></span> Akhila's Student Dashboard
+      </footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="editModal" aria-hidden="true">
+    <form class="edit-modal" id="profileForm">
+      <div class="modal-heading">
+        <div>
+          <p class="eyebrow">PERSONAL DETAILS</p>
+          <h2>Edit Student Profile</h2>
+        </div>
+        <button type="button" class="close-button" id="closeModal">×</button>
+      </div>
+
+      <label>
+        Full name
+        <input id="nameInput" name="name" required value="Guthi Sai Akhila">
+      </label>
+
+      <label>
+        Email
+        <input id="emailInput" name="email" type="email"
+               value="akhilagutthi@gmail.com">
+      </label>
+
+      <label>
+        College
+        <input id="collegeInput" name="college"
+               value="Mohan Babu University">
+      </label>
+
+      <label>
+        CGPA (optional)
+        <input id="cgpaInput" name="cgpa" placeholder="Enter your CGPA">
+      </label>
+
+      <label>
+        Professional Summary
+        <textarea id="summaryInput" name="summary" rows="4">Motivated AI/ML student with knowledge of Python, Java, Machine Learning, and Data Science concepts. Interested in Artificial Intelligence, Deep Learning, and Computer Vision. Seeking internship opportunities to apply technical skills to real-world projects and gain industry experience.</textarea>
+      </label>
+
+      <p class="form-note">
+        Changes are saved in this browser only.
+      </p>
+
+      <div class="modal-actions">
+        <button type="button" class="outline-button" id="cancelEdit">
+          Cancel
+        </button>
+        <button type="submit" class="primary-button">Save changes</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
